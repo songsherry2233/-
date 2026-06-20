@@ -1108,5 +1108,101 @@
     "meaning": "占；解释",
     "set": "latest",
     "example": "Food is the largest cost, accounting for half of the budget."
+  },
+  {
+    "word": "role",
+    "meaning": "角色",
+    "set": "latest",
+    "example": "Every team member has an important role in the project."
+  },
+  {
+    "word": "energetic",
+    "meaning": "精力充沛的",
+    "set": "latest",
+    "example": "The energetic teacher made the lesson lively and fun."
+  },
+  {
+    "word": "predictable",
+    "meaning": "可预测的",
+    "set": "latest",
+    "example": "A predictable routine can help students feel calm."
+  },
+  {
+    "word": "secret",
+    "meaning": "秘密的",
+    "set": "latest",
+    "example": "They found a secret door behind the bookshelf."
+  },
+  {
+    "word": "productivity",
+    "meaning": "生产力",
+    "set": "latest",
+    "example": "Short breaks can improve productivity during long study sessions."
+  },
+  {
+    "word": "energy",
+    "meaning": "能量；精力",
+    "set": "latest",
+    "example": "A healthy breakfast gives you energy for the morning."
+  },
+  {
+    "word": "screen",
+    "meaning": "屏幕",
+    "set": "latest",
+    "example": "Please look at the screen and read the sentence."
+  },
+  {
+    "word": "discover",
+    "meaning": "发现",
+    "set": "latest",
+    "example": "Students can discover new ideas through reading."
+  },
+  {
+    "word": "mental",
+    "meaning": "思考的；心理的",
+    "set": "latest",
+    "example": "Solving puzzles is good mental exercise."
+  },
+  {
+    "word": "prepared",
+    "meaning": "有准备的",
+    "set": "latest",
+    "example": "She felt prepared before the English test."
+  },
+  {
+    "word": "depending on",
+    "meaning": "依赖；取决于",
+    "set": "latest",
+    "example": "The plan may change depending on the weather."
+  },
+  {
+    "word": "overrated",
+    "meaning": "高估的",
+    "set": "latest",
+    "example": "Some people think expensive brands are overrated."
+  },
+  {
+    "word": "increased",
+    "meaning": "增长；增加的",
+    "set": "latest",
+    "example": "Regular practice increased his confidence."
+  },
+  {
+    "word": "uncertainty",
+    "meaning": "不确定；犹豫",
+    "set": "latest",
+    "example": "There was uncertainty about the final result."
+  },
+  {
+    "word": "relaxation",
+    "meaning": "放松；休息",
+    "set": "latest",
+    "example": "Music can be a simple form of relaxation."
+  },
+  {
+    "word": "disorder",
+    "meaning": "混乱",
+    "set": "latest",
+    "example": "The sudden change caused disorder in the classroom."
   }
 ]
