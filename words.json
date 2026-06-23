@@ -1204,5 +1204,245 @@
     "meaning": "混乱",
     "set": "latest",
     "example": "The sudden change caused disorder in the classroom."
+  },
+  {
+    "word": "play a crucial role in",
+    "meaning": "扮演重要角色",
+    "set": "latest",
+    "example": "Parents play a crucial role in a child's education."
+  },
+  {
+    "word": "assistant",
+    "meaning": "助手",
+    "set": "latest",
+    "example": "The assistant helped the teacher prepare the lesson."
+  },
+  {
+    "word": "launching",
+    "meaning": "开通；启动",
+    "set": "latest",
+    "example": "The company is launching a new online learning platform."
+  },
+  {
+    "word": "a sense of belonging",
+    "meaning": "归属感",
+    "set": "latest",
+    "example": "Joining a club can give students a sense of belonging."
+  },
+  {
+    "word": "trend",
+    "meaning": "趋势",
+    "set": "latest",
+    "example": "Online shopping has become a common trend."
+  },
+  {
+    "word": "community",
+    "meaning": "社区",
+    "set": "latest",
+    "example": "The whole community worked together to clean the park."
+  },
+  {
+    "word": "conclude",
+    "meaning": "总结",
+    "set": "latest",
+    "example": "The speaker will conclude the talk with three suggestions."
+  },
+  {
+    "word": "aware of",
+    "meaning": "意识到",
+    "set": "latest",
+    "example": "Students should be aware of the risks of spending too much time online."
+  },
+  {
+    "word": "overgeneralization",
+    "meaning": "过度概括",
+    "set": "latest",
+    "example": "Overgeneralization can lead to unfair judgments."
+  },
+  {
+    "word": "overthinking state",
+    "meaning": "过度思考状态",
+    "set": "latest",
+    "example": "Deep breathing can help you leave an overthinking state."
+  },
+  {
+    "word": "separate from",
+    "meaning": "把……和……区分",
+    "set": "latest",
+    "example": "Good readers can separate facts from opinions."
+  },
+  {
+    "word": "manageable",
+    "meaning": "可管理的",
+    "set": "latest",
+    "example": "Breaking a big task into parts makes it manageable."
+  },
+  {
+    "word": "allows",
+    "meaning": "允许",
+    "set": "latest",
+    "example": "The app allows students to review words anytime."
+  },
+  {
+    "word": "irrelevant",
+    "meaning": "无关紧要的",
+    "set": "latest",
+    "example": "Please remove irrelevant details from your answer."
+  },
+  {
+    "word": "diverse",
+    "meaning": "多样的",
+    "set": "latest",
+    "example": "The city is home to a diverse group of people."
+  },
+  {
+    "word": "chapter",
+    "meaning": "章节",
+    "set": "latest",
+    "example": "Read the first chapter before class tomorrow."
+  },
+  {
+    "word": "are faced with",
+    "meaning": "面临",
+    "set": "latest",
+    "example": "Many students are faced with pressure before exams."
+  },
+  {
+    "word": "steps",
+    "meaning": "步骤",
+    "set": "latest",
+    "example": "Follow these steps to finish the experiment."
+  },
+  {
+    "word": "fostering",
+    "meaning": "培养",
+    "set": "latest",
+    "example": "Reading is useful for fostering imagination."
+  },
+  {
+    "word": "channels",
+    "meaning": "渠道",
+    "set": "latest",
+    "example": "The school uses several channels to contact parents."
+  },
+  {
+    "word": "additionality",
+    "meaning": "额外性",
+    "set": "latest",
+    "example": "The report discusses the additionality of the new program."
+  },
+  {
+    "word": "convenience",
+    "meaning": "便利",
+    "set": "latest",
+    "example": "Online payment offers great convenience."
+  },
+  {
+    "word": "flexible",
+    "meaning": "灵活的",
+    "set": "latest",
+    "example": "A flexible schedule helps students manage their time."
+  },
+  {
+    "word": "emotion",
+    "meaning": "情绪",
+    "set": "latest",
+    "example": "Music can express strong emotion."
+  },
+  {
+    "word": "avoidance",
+    "meaning": "回避",
+    "set": "latest",
+    "example": "Avoidance of problems rarely makes them disappear."
+  },
+  {
+    "word": "outcome",
+    "meaning": "结果",
+    "set": "latest",
+    "example": "Hard work can improve the outcome."
+  },
+  {
+    "word": "comfort zone",
+    "meaning": "舒适区",
+    "set": "latest",
+    "example": "Trying something new can help you leave your comfort zone."
+  },
+  {
+    "word": "recall",
+    "meaning": "回忆起",
+    "set": "latest",
+    "example": "She tried to recall the word from yesterday's lesson."
+  },
+  {
+    "word": "opportunity",
+    "meaning": "机会",
+    "set": "latest",
+    "example": "The competition is a good opportunity to learn."
+  },
+  {
+    "word": "additionally",
+    "meaning": "另外",
+    "set": "latest",
+    "example": "Additionally, students can practice with flashcards."
+  },
+  {
+    "word": "integration",
+    "meaning": "集成；融合",
+    "set": "latest",
+    "example": "The integration of technology makes lessons more interesting."
+  },
+  {
+    "word": "tapping",
+    "meaning": "利用；发掘",
+    "set": "latest",
+    "example": "The project is tapping students' creativity."
+  },
+  {
+    "word": "expand",
+    "meaning": "扩大",
+    "set": "latest",
+    "example": "Reading can expand your vocabulary."
+  },
+  {
+    "word": "connection",
+    "meaning": "联接",
+    "set": "latest",
+    "example": "There is a close connection between sleep and memory."
+  },
+  {
+    "word": "ecosystem",
+    "meaning": "生态系统",
+    "set": "latest",
+    "example": "Pollution can damage the whole ecosystem."
+  },
+  {
+    "word": "prevent...from",
+    "meaning": "阻止……做某事",
+    "set": "latest",
+    "example": "Good planning can prevent...from becoming a serious problem."
+  },
+  {
+    "word": "emotional",
+    "meaning": "情绪的",
+    "set": "latest",
+    "example": "An emotional response is natural in a stressful situation."
+  },
+  {
+    "word": "failure",
+    "meaning": "失败",
+    "set": "latest",
+    "example": "Failure can teach us important lessons."
+  },
+  {
+    "word": "recognize",
+    "meaning": "认识到",
+    "set": "latest",
+    "example": "It is important to recognize your own strengths."
+  },
+  {
+    "word": "reason",
+    "meaning": "理性",
+    "set": "latest",
+    "example": "Reason can help us make better decisions."
   }
 ]
