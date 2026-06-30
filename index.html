@@ -351,11 +351,15 @@
       </div>
       <div class="control-group" id="setGroup">
         <button type="button" data-set="all" class="active">全部</button>
-        <button type="button" data-set="new">本次新词</button>
-        <button type="button" data-set="review">前两次抽查</button>
-        <button type="button" data-set="photo">图片新增</button>
-        <button type="button" data-set="latest">这次新增</button>
+        <button type="button" data-set="new">6月9日 本次新词</button>
+        <button type="button" data-set="review">6月9日 前两次抽查</button>
+        <button type="button" data-set="photo">6月30日 图片新增</button>
+        <button type="button" data-set="latest">6月30日 新增词</button>
+        <button type="button" data-set="2026-06-30">6月30日 最新新增</button>
         <button type="button" data-set="mistakes">错题</button>
+      </div>
+      <div class="control-group" id="dateGroup">
+        <button type="button" data-date="all" class="active">全部时间</button>
       </div>
       <div class="control-group">
         <button type="button" class="ghost" id="shuffleBtn">重新洗牌</button>
@@ -398,6 +402,7 @@
     const state = {
       mode: "mixed",
       set: "all",
+      date: "all",
       queue: [],
       index: 0,
       answered: false,
@@ -453,11 +458,12 @@
     }
 
     function getPool() {
+      const byDate = item => state.date === "all" || item.date === state.date;
       if (state.set === "mistakes") {
-        return WORDS.filter(item => state.mistakes.has(item.word));
+        return WORDS.filter(item => state.mistakes.has(item.word) && byDate(item));
       }
-      if (state.set === "all") return WORDS;
-      return WORDS.filter(item => item.set === state.set);
+      if (state.set === "all") return WORDS.filter(byDate);
+      return WORDS.filter(item => item.set === state.set && byDate(item));
     }
 
     function rebuildQueue() {
@@ -489,7 +495,9 @@
       renderMistakes();
 
       if (state.queue.length === 0) {
-        els.sourceBadge.textContent = setLabel();
+        els.sourceBadge.textContent = state.set === "all" && state.date !== "all"
+          ? `${setLabel()} · ${dateLabel(state.date)}`
+          : setLabel();
         els.modeBadge.textContent = modeLabel();
         els.promptLabel.textContent = "没有可练习的词";
         els.targetWord.textContent = state.set === "mistakes" ? "错题已经清空" : "No words";
@@ -600,21 +608,41 @@
     function setLabel() {
       return {
         all: "全部",
-        new: "本次新词",
-        review: "前两次抽查",
-        photo: "图片新增",
-        latest: "这次新增",
+        new: "6月9日 本次新词",
+        review: "6月9日 前两次抽查",
+        photo: "6月30日 图片新增",
+        latest: "6月30日 新增词",
+        "2026-06-30": "6月30日 最新新增",
         mistakes: "错题"
       }[state.set];
     }
 
     function sourceLabel(set) {
       return {
-        new: "本次新词",
-        review: "前两次抽查",
-        photo: "图片新增",
-        latest: "这次新增"
+        new: "6月9日 本次新词",
+        review: "6月9日 前两次抽查",
+        photo: "6月30日 图片新增",
+        latest: "6月30日 新增词",
+        "2026-06-30": "6月30日 最新新增"
       }[set] || "全部";
+    }
+
+    function dateLabel(date) {
+      if (!date || date === "all") return "全部时间";
+      const [year, month, day] = date.split("-");
+      if (!year || !month || !day) return date;
+      return `${Number(month)}月${Number(day)}日`;
+    }
+
+    function renderDateFilters() {
+      const dates = [...new Set(WORDS.map(item => item.date).filter(Boolean))].sort().reverse();
+      const buttons = [
+        `<button type="button" data-date="all" class="${state.date === "all" ? "active" : ""}">全部时间</button>`,
+        ...dates.map(date => (
+          `<button type="button" data-date="${date}" class="${state.date === date ? "active" : ""}">${dateLabel(date)}</button>`
+        ))
+      ];
+      document.querySelector("#dateGroup").innerHTML = buttons.join("");
     }
 
     function modeLabel() {
@@ -638,7 +666,11 @@
       try {
         const response = await fetch("./words.json", { cache: "no-store" });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        WORDS = await response.json();
+        WORDS = (await response.json()).map(item => ({
+          ...item,
+          date: item.date || "2026-06-30"
+        }));
+        renderDateFilters();
         rebuildQueue();
       } catch (error) {
         els.promptLabel.textContent = "词表读取失败";
@@ -664,6 +696,16 @@
       state.set = set;
       document.querySelectorAll("#setGroup button").forEach(btn => {
         btn.classList.toggle("active", btn.dataset.set === set);
+      });
+      rebuildQueue();
+    });
+
+    document.querySelector("#dateGroup").addEventListener("click", event => {
+      const date = event.target.dataset.date;
+      if (!date) return;
+      state.date = date;
+      document.querySelectorAll("#dateGroup button").forEach(btn => {
+        btn.classList.toggle("active", btn.dataset.date === date);
       });
       rebuildQueue();
     });
